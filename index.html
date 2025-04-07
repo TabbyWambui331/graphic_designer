@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabitha Nungari | Graphic Designer</title>
+  <link rel="stylesheet" href="styling.css">
+  <style>
+    body {
+      font-family: 'Cursive', 'Arial', sans-serif; /* Artistic font */
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: #fff;
+    }
+    .header h1 {
+      font-size: 2.5em;
+    }
+    .profile-image {
+      display: block;
+      margin: 20px auto;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .portfolio-container, .videos-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .portfolio-container img, .videos-container video {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .contact-form {
+      text-align: center;
+    }
+    .contact-form input, .contact-form textarea, .contact-form button {
+      width: 80%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background-color: #222;
+      color: #fff;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #444;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .contact-info a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="tabitha.jpg.jpg" alt="Tabitha Nungari" class="profile-image">
+    <h1>Tabitha Nungari</h1>
+    <p>Experienced Graphic Designer with a passion for creating impactful posters, visuals, and digital content.</p>
+  </div>
+
+  <div class="section">
+    <h2>Samples of Posters</h2>
+    <div class="portfolio-container">
+      <img src="flier.jpg.png" alt="Poster Design 1">
+      <img src="Get rid of bank queues once.jpg.png" alt="Poster Design 2">
+      <img src="Linkeldin Post.jpg.png" alt="Poster Design 3">
+      <img src="gLADYS.png" alt="Poster Design 4">
+      <img src="To Live Slow is to Live it Safe.png" alt="Poster Design 5">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Samples of Videos</h2>
+    <div class="videos-container">
+      <video controls>
+        <source src="Copy of PACKAGE ON OFFER (Mobile Video).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="maridady.mp4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="CALL NOW.jpg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="marketing.
+        mp4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Send Me a Message</h2>
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="confirmationMessage" style="display:none; color: gold;">Thank you! Your message has been sent.</p>
+    </div>
+  </div>
+
+  <div class="section contact-info">
+    <h2>Contact Me</h2>
+    <p>Phone: 0701 361 642</p>
+    <p>Email: <a href="mailto:nungaitabby@gmail.com">nungaitabby@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tabitha-nungari-">www.linkedin.com/in/tabitha-nungari-</a></p>
+    <p>Google Reviews: <a href="https://g.co/kgs/PVpZiuL">https://g.co/kgs/PVpZiuL</a></p>
+  </div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const confirmation = document.getElementById('confirmationMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // prevent real form submission
+      confirmation.style.display = 'block';
+      form.reset(); // Clear form
+    });
+  </script>
+</body>
+</html>
